@@ -1,0 +1,39 @@
+// Footer
+
+footer {
+    .top {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    border-top: 1px solid $borderColor;
+
+    .footer-logo {
+        img {
+            max-width: 200px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .social-footer {
+        text-align: center;
+
+        ul {
+            list-style: none;
+            padding-right: 0;
+
+            li {
+                display: inline-block;
+                padding: 15px 15px;
+                margin: 0 auto;
+
+                a {
+                    color: $golden;
+                    font-size: 28px;
+                    margin-right: 15px;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}

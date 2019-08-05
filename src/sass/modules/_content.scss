@@ -1,0 +1,99 @@
+// Left View
+
+.left-view {
+    position: relative;
+
+    .left-image-container {
+        &:after {
+            display: block;
+            content: "";
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            border-top: 4px solid $golden;
+            border-right: 4px solid $golden;
+        }
+
+        &:before {
+            display: block;
+            content: "";
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            bottom: -5px;
+            left: -5px;
+            border-bottom: 4px solid $golden;
+            border-left: 4px solid $golden;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    h1 {
+        color: $black;
+        margin-top: 30px;
+    }
+
+    h5 {
+        color: $golden;
+        margin-bottom: 60px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+// Right View
+
+.right-view {
+    position: relative;
+
+    .right-image-container {
+        &:after {
+            display: block;
+            content: "";
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            border-top: 4px solid $golden;
+            border-left: 4px solid $golden;
+        }
+
+        &:before {
+            display: block;
+            content: "";
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+            border-bottom: 4px solid $golden;
+            border-right: 4px solid $golden;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    h1 {
+        color: $black;
+        margin-top: 30px;
+    }
+
+    h5 {
+        color: $golden;
+        margin-bottom: 60px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+}

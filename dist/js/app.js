@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".my-clock").FlipClock(259200,{defaultLanguage:"ar",language:"ar",autoStart:!0,clockFace:"DailyCounter",countdown:!0,showSeconds:!0})});
