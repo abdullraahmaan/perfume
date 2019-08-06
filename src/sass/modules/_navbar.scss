@@ -18,7 +18,7 @@
     div {
         padding-top: 20px;
         flex-wrap: nowrap;
-        flex-basis: 32%;
+        flex-basis: 40%;
 
         &:nth-child(2) {
             padding-top: 0;
@@ -51,7 +51,7 @@
             text-align: right;
         }
 
-        @media (max-width: 991px) {
+        @media (min-width: 320px) and (max-width: 991px) {
             display: none;
         }
     }
@@ -77,7 +77,7 @@
         }
     }
 
-    @media (max-width: 991px) {
+    @media (min-width: 320px) and (max-width: 991px) {
         display: none;
     }
 }

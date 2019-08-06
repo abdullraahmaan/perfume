@@ -4,6 +4,8 @@
     position: relative;
 
     .left-image-container {
+        padding: 15px 15px;
+
         &:after {
             display: block;
             content: "";
@@ -54,6 +56,8 @@
     position: relative;
 
     .right-image-container {
+        padding: 15px 15px;
+
         &:after {
             display: block;
             content: "";

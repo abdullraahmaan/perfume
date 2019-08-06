@@ -79,15 +79,34 @@ gulp.task('html', function () {
 });
 
 //IMAGES & SVG Tasks
-gulp.task('img', function () {
-    return gulp.src("./src/img/**/*.*")
-        .pipe(plumber())
-        .pipe(imagemin())
-        .pipe(gulp.dest('./dist/imgs'))
-        .pipe(livereload())
-        .pipe(browserSync.stream());
-});
-
+gulp.task('img', () =>
+    gulp.src('src/imgs/*')
+    .pipe(plumber())
+    .pipe(imagemin([
+        imagemin.gifsicle({
+            interlaced: true
+        }),
+        imagemin.jpegtran({
+            progressive: true,
+            optimizationLevel: 7
+        }),
+        imagemin.optipng({
+            optimizationLevel: 7
+        }),
+        imagemin.svgo({
+            plugins: [{
+                    removeViewBox: true
+                },
+                {
+                    cleanupIDs: false
+                }
+            ]
+        })
+    ]))
+    .pipe(gulp.dest('dist/imgs'))
+    .pipe(livereload())
+    .pipe(browserSync.stream())
+);
 
 
 //Javscript Tasks
